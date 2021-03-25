@@ -1,5 +1,5 @@
 # URLRedirect
-Takes a URL with a GUID and passes it onto the flashpoint:// protocol, which will then launch the game.
+Takes a URL with a GUID and passes it onto the flashpoint:// protocol, which will then launch the game. This also adds an https URL that redirects to the flashpoint:// protocol for chat clients.
 
 # How to use
 1. Grab the latest release with CLIFp from [the releases page](https://github.com/FlashpointProject/URLRedirect/releases) and unzip it into the Flashpoint folder. (You can also grab the version without CLIFp and get the latest version of CLIFp from [its releases page](https://github.com/oblivioncth/CLIFp/releases/tag/v0.4) and drop that into Flashpoint folder.)
