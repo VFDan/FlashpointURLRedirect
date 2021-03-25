@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://unpkg.com/@ungap/url-search-params@0.2.2/min.js">
-    <script>
-      var url = new URL(window.location.href);
-      var guid = url.searchParams.get("guid");
-      window.location.assign("flashpoint://"+guid)
-    </script>
-  </head>
+	<head>
+		<script src="https://unpkg.com/@ungap/url-search-params@0.2.2/min.js"></script>
+  	</head>
+	<body>
+		<script>
+			var url = new URL(window.location.href);
+			var guid = url.searchParams.get("guid");
+			window.location.assign("flashpoint://"+guid);
+		</script>
+	</body>
 </html>
