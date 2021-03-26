@@ -7,7 +7,7 @@
 		<script>
 			var url = new URL(window.location.href);
 			var guid = url.searchParams.get("guid");
-			if (guid.length==36) {
+			if (guid.length==36 && /^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/.test(guid)) {
 				window.location.assign("flashpoint://"+guid);
 			} else {
 				alert("Invalid GUID");
