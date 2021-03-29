@@ -12,4 +12,4 @@ Takes a URL with a GUID and passes it onto CLIFp, which will then launch the gam
 8. Your game/animation should start!
 
 # What if I don't want it anymore?
-You can use `FlashpointRemoveRegistry.bat` and then delete `FlashpointRemoveRegistry.bat`, `FlashpointAddRegistry.bat`, `FlashpointURLs.vbs`, and `CLIFp.exe`.
+To undo the `flashpoint://` registry association, run `FlashpointRemoveRegistry.bat`. You can then delete `FlashpointRemoveRegistry.bat`, `FlashpointAddRegistry.bat`, `FlashpointURLs.vbs`, and `CLIFp.exe`.
