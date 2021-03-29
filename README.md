@@ -10,3 +10,6 @@ Takes a URL with a GUID and passes it onto CLIFp, which will then launch the gam
 6. Type https://vfdan.github.io/FlashpointURLRedirect/?guid= and add the GUID to the end; for Run 2 the link is https://vfdan.github.io/FlashpointURLRedirect/?guid=371749ad-fbb1-491e-8037-5953e1d46477. In Discord, you can use `<flashpoint://371749ad-fbb1-491e-8037-5953e1d46477>` to directly link to it, however some chat clients may not support this and may need to use the https link.
 7. Allow vfdan.github.io to open `Microsoft ® Windows Based Script Host`.
 8. Your game/animation should start!
+
+# What if I don't want it anymore?
+You can use `FlashpointRemoveRegistry.bat` and then delete `FlashpointRemoveRegistry.bat`, `FlashpointAddRegistry.bat`, `FlashpointURLs.vbs`, and `CLIFp.exe`.
