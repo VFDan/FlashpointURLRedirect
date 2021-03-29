@@ -8,5 +8,5 @@ Takes a URL with a GUID and passes it onto the flashpoint:// protocol, which wil
 4. Right click the game and press "Copy Game UUID"; for Run 2, this is will copy 371749ad-fbb1-491e-8037-5953e1d46477 to the clipboard.
 5. Close the Launcher.
 6. Type https://vfdan.github.io/FlashpointURLRedirect/?guid= and add the GUID to the end; for Run 2 the link is https://vfdan.github.io/FlashpointURLRedirect/?guid=371749ad-fbb1-491e-8037-5953e1d46477.
-7. Allow vfdan.github.io to open `FlashpointURLs.bat`.
+7. Allow vfdan.github.io to open `FlashpointURLs.vbs`.
 8. Your game/animation should start!
