@@ -14,7 +14,7 @@ If IsUUID(gameID) Then
 CreateObject("WScript.Shell").Run(clifpLaunch)
 	WScript.Quit
 ElseIf Not IsUUID(gameID) Then
-	msgbox "Invalid GUID", vbExclamation
+	msgbox "Invalid GUID", vbExclamation, "FlashpointURLRedirect"
 	WScript.Quit
 End If
 
