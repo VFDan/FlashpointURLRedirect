@@ -11,7 +11,7 @@ gameID = LCase(SanitizeURL(WScript.Arguments(0)))
 clifpLaunch = """" & clifp & """" & " --quiet --auto " & gameID
 
 If IsUUID(gameID) Then 
-CreateObject("WScript.Shell").Run(clifpLaunch)
+	CreateObject("WScript.Shell").Run(clifpLaunch)
 	WScript.Quit
 ElseIf Not IsUUID(gameID) Then
 	msgbox "Invalid GUID", vbExclamation, "FlashpointURLRedirect"
