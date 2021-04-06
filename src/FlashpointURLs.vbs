@@ -1,10 +1,13 @@
 ' Based on Flashpoint Shortcut Maker by nosamu and oblivioncth
 
-scriptDir = CreateObject("Scripting.FileSystemObject").GetParentFolderName(WScript.ScriptFullName)
-clifp = scriptdir & "\CLIFp.exe"
+scriptDir = GetNthParentFolder(WScript.ScriptFullName, 1)
+clifp = GetNthParentFolder(scriptDir, 2) & "\CLIFp.exe"
 If Not FileExists(clifp) Then 
-	msgbox "Please move this script into your Flashpoint folder. Also make sure that CLIFp.exe is in your Flashpoint folder."
-	WScript.Quit
+	clifp = GetNthParentFolder(scriptDir, 1) & "\CLIFp.exe"
+	If Not FileExists(clifp) Then 
+		msgbox "Please move this script into FPSoftware\URLRedirect. Also make sure that CLIFp.exe is in your Flashpoint or FPSoftware folder.", vbExclamation, "FlashpointURLRedirect"
+		WScript.Quit
+	End If
 End If
 
 gameID = LCase(SanitizeURL(WScript.Arguments(0)))
@@ -47,4 +50,11 @@ Function IsUUID(strUUID)
 	regEx.Pattern = "^({|\()?[A-Fa-f0-9]{8}-([A-Fa-f0-9]{4}-){3}[A-Fa-f0-9]{12}(}|\))?$"
 	IsUUID = regEx.Test(strUUID)
 	Set RegEx = Nothing
+End Function
+
+Function GetNthParentFolder(FilePath, N)
+	GetNthParentFolder = FilePath
+	For i = 1 to N 
+		GetNthParentFolder = CreateObject("Scripting.FileSystemObject").GetParentFolderName(GetNthParentFolder)
+	Next
 End Function
