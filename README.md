@@ -2,8 +2,8 @@
 Takes a URL with a GUID and passes it onto CLIFp, which will then launch the game in [BlueMaxima's Flashpoint](https://bluemaxima.org/flashpoint/). This also adds an https URL that redirects to the flashpoint:// protocol for chat clients.
 
 # How to use
-1. Grab the latest release with CLIFp from [the releases page](https://github.com/VFDan/FlashpointURLRedirect/releases) and unzip it into the Flashpoint folder. (You can also grab the version without CLIFp and get the latest version of CLIFp from [its releases page](https://github.com/oblivioncth/CLIFp/releases) and drop that into Flashpoint folder.)
-2. Run `FlashpointAddRegistry.bat`.
+1. Grab the latest release with CLIFp from [the releases page](https://github.com/VFDan/FlashpointURLRedirect/releases) and unzip it into the Flashpoint folder. (You can also grab the version without CLIFp and get the latest version of CLIFp from [its releases page](https://github.com/oblivioncth/CLIFp/releases) and drop it into the main Flashpoint folder or FPSoftware.)
+2. Go to `FPSoftware\URLRedirect` and run `FlashpointAddRegistry.bat`.
 3. Open the Flashpoint Launcher and find a game/animation — we'll use Run 2 as an example.
 4. Right click the game and press "Copy Game UUID"; for Run 2, this is will copy 371749ad-fbb1-491e-8037-5953e1d46477 to the clipboard.
 5. Close the Launcher.
@@ -14,4 +14,4 @@ Takes a URL with a GUID and passes it onto CLIFp, which will then launch the gam
 8. Your game/animation should start!
 
 # What if I don't want it anymore?
-To undo the `flashpoint://` registry association, run `FlashpointRemoveRegistry.bat`. You can then delete `FlashpointRemoveRegistry.bat`, `FlashpointAddRegistry.bat`, `FlashpointURLs.vbs`, and `CLIFp.exe`.
+To undo the `flashpoint://` registry association, go to `FPSoftware\URLRedirect` and run `FlashpointRemoveRegistry.bat`. You can then delete the `URLRedirect` folder and `CLIFp.exe`.
