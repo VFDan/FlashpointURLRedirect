@@ -10,8 +10,8 @@ Takes a URL with a GUID and passes it onto CLIFp, which will then launch the gam
 6. There are two ways to create a link:
 	1. Directly using the flashpoint:// protocol: Type `flashpoint:// + The copied UUID`. For Run 2, this is flashpoint://371749ad-fbb1-491e-8037-5953e1d46477.
 	2. Using the https redirector (for use in places that don't support linking custom URL schemes): Type `https://vfdan.github.io/FlashpointURLRedirect/?guid= + The copied UUID`. For Run 2, this is https://vfdan.github.io/FlashpointURLRedirect/?guid=371749ad-fbb1-491e-8037-5953e1d46477. Keep in mind that in Discord, you can use `<flashpoint://371749ad-fbb1-491e-8037-5953e1d46477>` to create a direct link.
-7. (If using the redirector) Allow vfdan.github.io to open `Microsoft ® Windows Based Script Host`.
-8. Your game/animation should start!
+		1. (If using the redirector) Allow vfdan.github.io to open `Microsoft ® Windows Based Script Host`.
+7. Your game/animation should start!
 
 # What if I don't want it anymore?
 To undo the `flashpoint://` registry association, go to `FPSoftware\URLRedirect` and run `FlashpointRemoveRegistry.bat`. You can then delete the `URLRedirect` folder and `CLIFp.exe`.
